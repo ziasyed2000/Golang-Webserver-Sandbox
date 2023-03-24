@@ -9,8 +9,8 @@ html {
   }
   
   :root {
-    --light-green: #00ff00;
-    --dark-green: #003b00;
+    --black: #000000;
+    --white: #ffffff;
     --dark-grey: #777;
     --light-grey: #dadce0;
   }
@@ -25,12 +25,12 @@ html {
   }
   
   a:hover {
-    text-decoration: underline;
+    text-decoration: none;
   }
   
   a.button {
-    border: 2px solid #004400;
-    color: var(--dark-green);
+    border: 2px solid #ffffff;
+    color: var(--white);
     border-radius: 4px;
     padding: 6px 24px;
     font-size: 14px;
@@ -39,8 +39,9 @@ html {
   
   a.button:hover {
     text-decoration: none;
-    background-color: var(--dark-green);
-    color: var(--light-green);
+    background-color: var(--white);
+    color: var(--black);
+    transition: all 100ms ease-in-out;
   }
   
   header {
@@ -52,13 +53,13 @@ html {
     right: 0;
     display: flex;
     justify-content: space-between;
-    background-color: var(--light-green);
+    background-color: var(--black);
     padding: 5px 10px;
     align-items: center;
   }
   
   .logo {
-    color: #002200;
+    color: #ffffff;
   }
   
   form {
@@ -69,12 +70,12 @@ html {
     width: 500px;
     height: 100%;
     border-radius: 4px;
-    border-color: transparent;
-    background-color: var(--dark-green);
-    color: var(--light-green);
+    background-color: var(--white);
+    color: var(--black);
     font-size: 16px;
     line-height: 1.4;
     padding-left: 5px;
+    border: none;
   }
   
   .container {
@@ -122,7 +123,7 @@ html {
   
   .metadata {
     display: flex;
-    color: var(--dark-green);
+    color: var(--white);
     font-size: 14px;
   }
   
